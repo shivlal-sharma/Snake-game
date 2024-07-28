@@ -107,6 +107,7 @@ let snakeGame = ()=>{
     musicBg.play();
     // checking the condition whether snake has collided with wall or itself
     if(iscollide(snakeArr)){
+        musicBg.pause();
         snakeArr = [{x:Math.round((Math.random()*18)+2),y:Math.round((Math.random()*18)+2)}];
         let gameOver = document.createElement('div');
         gameOver.setAttribute('id','gameOver');
