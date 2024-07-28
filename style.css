@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    min-height: 100vh;
+    background: url('snake.jpg') no-repeat center center/cover;
+    padding-top: 140px;
+}
+
+#gameOver{
+    position: relative;
+    position: absolute;
+    top: 10px;
+    left:45%;
+    right: 40%;
+    background: linear-gradient(to left,#cb1111,#ff0000);
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    width: 150px;
+    z-index: 20;
+}
+
+#remove{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff2a;
+    cursor: pointer;
+}
+
+#playAgain{
+    position: absolute;
+    top: 40px;
+    left: 27px;;
+    background: linear-gradient(to top,#7700ff,#bb00ff);
+}
+
+.button-group{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    z-index: 20;
+}
+
+button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,blue,red);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#score{
+    top: 10px;
+}
+
+#highScore{
+    top: 50px;
+}
+
+.value{
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(to left,red,blue);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+#scoreValue{
+    color: #fbff00;
+}
+
+#highScoreValue{
+    color: #00ff4c;
+}
+
+#star-group{
+    width: 165px;
+    position: relative;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    gap: 5px;
+    background: linear-gradient(to right,#5900ff,#c76cff);
+    border: none;
+    outline: none;
+}
+
+.star{
+    color: gold;
+}
+
+#board{
+    background: linear-gradient(to top, #00ffcc,#00ffcc);
+    width: 500px;
+    height: 500px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+
+.head{
+    background: #800080;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 5px;
+}
+
+.snake-body{
+    background: linear-gradient(orange,chocolate);
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.food{
+    background: #0000ff;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 10px;
+}
